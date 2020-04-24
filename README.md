@@ -20,6 +20,9 @@
 				sudo chown -R group:user /path to dir
 			Make /var/www readabale globaly
 				sudo chmod -R 755 /var/html
+	1.4 - Edit host file
+			Edit host file in /etc/hosts
+			add whatever.name to host file under localhost ip
 
 	1.4 - Create Virtual Server
 			Make a copy of /etc/apache2/sites-available/000-defaults.conf to whatever.name.conf
@@ -47,12 +50,10 @@
 
 		- Method 01
 			sudo apt install mysql-server
-			sudo mysql_secure_installation
-			sudo mysql
-			SELECT user,authentication_string,plugin,host FROM mysql.user;
-			ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Madhu47215';
-			FLUSH PRIVILEGES;
-			Download phpmyadmin and past it in to your custom web root file.
+			Enter root password to promt
+			sudo apt install phpmyadmin
+			edit apache conf file and add "include /etc/phpmyadmin/apache2.conf
+			username = root / password = password which entered to prompt
 			
 		- Method 02
 			sudo apt install mysql-server
