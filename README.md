@@ -1,4 +1,4 @@
-			#Web Server In Linux (Ubuntu)
+			# Web Server In Linux (Ubuntu)
 
 >Complete Guild for install apache, php, mysql in linux and configure 
 
