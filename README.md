@@ -1,10 +1,9 @@
+			#Web Server In Linux (Ubuntu)
 
-		Web Server In Linux (Ubuntu)
-
-Complete Guild for install apache, php, mysql in linux and configure 
-
+>Complete Guild for install apache, php, mysql in linux and configure 
 
 01 - Apache
+
 	1.1 	Install Apache Server
 				sudo apt install apache2
 
@@ -37,10 +36,12 @@ Complete Guild for install apache, php, mysql in linux and configure
 
 
 02 - PHP
+
 	2.1 - Install PHP
 			sudo apt install php libapache2-mod-php
 
 03 - Mysql
+
 	3.1 - Install mysql
 
 		- Method 01
@@ -59,5 +60,6 @@ Complete Guild for install apache, php, mysql in linux and configure
 			username = root / password = password which entered to prompt
 
 04 - Extras
+
 	4.1 - Virual Host Custom Script
 			https://github.com/lalantham/virtualhost
