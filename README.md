@@ -52,8 +52,9 @@
 			sudo apt install mysql-server
 			Enter root password to promt
 			sudo apt install phpmyadmin
-			edit apache conf file and add "include /etc/phpmyadmin/apache2.conf
+			edit apache conf file and add "include /etc/phpmyadmin/apache.conf
 			username = root / password = password which entered to prompt
+			Restart apache
 			
 		- Method 02
 			sudo apt install mysql-server
