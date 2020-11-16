@@ -61,8 +61,19 @@
 			Enter root password to promt
 			install sql client and use credentials to login [Ex - DBeaver]
 			username = root / password = password which entered to prompt
-
 ## 04 - Extras
+
+	4.1 - Reset My Sql Password
+			sudo /etc/init.d/mysql stop	
+			sudo mkdir /var/run/mysqld
+			sudo chown mysql /var/run/mysqld
+			sudo mysqld_safe --skip-grant-tables&
+			sudo mysql --user=root mysql
+			UPDATE mysql.user SET authentication_string=null WHERE User='root';
+			flush privileges;
+			ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password_here';
+			flush privileges;
+## 05 - Extras
 
 	4.1 - Virual Host Custom Script
 			https://github.com/lalantham/virtualhost
