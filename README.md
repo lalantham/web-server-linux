@@ -55,6 +55,13 @@
 			edit apache conf file and add "include /etc/phpmyadmin/apache.conf
 			username = root / password = password which entered to prompt
 			Restart apache
+			============================================================
+			sudo mysql_secure_installation
+			sudo mysql
+			SELECT user,authentication_string,plugin,host FROM mysql.user;
+			ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+			FLUSH PRIVILEGES;
+			SELECT user,authentication_string,plugin,host FROM mysql.user;
 			
 		- Method 02
 			sudo apt install mysql-server
