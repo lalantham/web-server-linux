@@ -43,6 +43,7 @@
 
 	2.1 - Install PHP
 			sudo apt install php libapache2-mod-php
+			sudo apt-get install php-mysql
 
 ## 03 - Mysql
 
