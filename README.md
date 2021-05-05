@@ -43,9 +43,14 @@
 
 	2.1 - Install PHP
 			sudo apt install php libapache2-mod-php
-			sudo apt-get install php-mysql
 
-## 03 - Mysql
+## 03 - PHP Mysql Module
+
+	2.1 - Install PHP
+			php -v
+			dpkg --list | grep 'php.*mysql'
+
+## 04 - Mysql
 
 	3.1 - Install mysql
 
@@ -69,7 +74,7 @@
 			Enter root password to promt
 			install sql client and use credentials to login [Ex - DBeaver]
 			username = root / password = password which entered to prompt
-## 04 - Extras
+## 05 - Extras
 
 	4.1 - Reset My Sql Password
 			sudo /etc/init.d/mysql stop	
@@ -81,7 +86,7 @@
 			flush privileges;
 			ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password_here';
 			flush privileges;
-## 05 - Extras
+## 06 - Extras
 
 	4.1 - Virual Host Custom Script
 			https://github.com/lalantham/virtualhost
